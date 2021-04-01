@@ -1,8 +1,8 @@
 # docker-squidssl
-Squid with SSL implementation in Docker.
+Squid 5 with SSL implementation in Docker.
 
 
-This image is based on Alpine 3.13.3 for x86_64 architectures (Raspberry PI support soon :D ) and was build having docker-compose in mind, if you need to install docker-compose you can find a tutorial in here: https://docs.docker.com/compose/install/
+This image is based on Alpine 3.13.3 and Squid 5 for x86_64 architectures (Raspberry PI support soon :D ) and was build having docker-compose in mind, if you need to install docker-compose you can find a tutorial in here: https://docs.docker.com/compose/install/
 
 First, you need to download the docker-compose.yaml file, then build the container with "docker-compose up", this will allow you to have a fully functional HTTP Squid proxy at the port 3128.
 
