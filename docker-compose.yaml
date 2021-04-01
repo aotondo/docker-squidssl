@@ -10,6 +10,7 @@ services:
       - './cfg-squid:/etc/squid'
       - './data-squid:/var/spool/squid'
       - './logs-squid:/var/log/squid'
+      - './ssldb-squid:/var/lib/squid'
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
