@@ -11,4 +11,4 @@ RUN chmod +x /usr/sbin/start.sh && \
     mkdir -p /var/lib/squid
 EXPOSE 3128 3128/udp
 EXPOSE 3128 3128/tcp
-ENTRYPOINT ["/bin/bash", "-c", "/usr/sbin/start.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "/usr/sbin/start.sh"] 
