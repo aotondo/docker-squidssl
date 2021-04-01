@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  squidproxy:
+    container_name: squidproxy
+    image: aotondo/squidssl
+    ports:
+      - "3128:3128/tcp"
+      - "3128:3128/udp"
+    volumes:
+      - './cfg-squid:/etc/squid'
+      - './data-squid:/var/spool/squid'
+      - './logs-squid:/var/log/squid'
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
