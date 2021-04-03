@@ -1,4 +1,4 @@
-FROM alpine:3.13.3
+FROM arm32v7/alpine:3.13.3
 ENV container docker
 RUN apk update && \
     apk upgrade && \
